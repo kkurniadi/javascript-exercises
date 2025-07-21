@@ -12,7 +12,12 @@ firstName = "Carlos"
 lastName = "Stevenson"
 thisYear = 1965
 birthYear = 1947
-greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old."
+
+fullName = firstname + " " + lastName
+age = thisYear - birthYear
+
+greeting = "Hello! My name is " + fullName + " and I am " + age + " years old."
+
 // Do not change this
 module.exports = {
   firstName: typeof firstName === 'undefined' ? undefined : firstName,
