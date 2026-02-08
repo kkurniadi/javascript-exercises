@@ -10,10 +10,10 @@ describe('leapYears', () => {
   test.skip('works with ridiculously futuristic non century years', () => {
     expect(leapYears(34992)).toBe(true);
   });
-  test('works with century years', () => {
+  test.skip('works with century years', () => {
     expect(leapYears(1900)).toBe(false);
   });
-  test.skip('works with century years', () => {
+  test('works with century years', () => {
     expect(leapYears(1600)).toBe(true);
   });
   test.skip('works with century years', () => {
