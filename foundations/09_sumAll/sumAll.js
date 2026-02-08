@@ -5,7 +5,7 @@ const sumAll = function(a, b) {
   let allInts = [a, b].sort((x, y) => x - y);
   const min = Math.min(allInts);
   const max = Math.max(allInts);
-  for (let i = min + 1; i < max; i++) {
+  for (let i = min; i <= max; i++) {
     allInts.push(i);
   }
   return allInts.reduce((total, current) => total + current);
