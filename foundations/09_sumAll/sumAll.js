@@ -8,6 +8,7 @@ const sumAll = function(a, b) {
   for (let i = min + 1; i < max; i++) {
     allInts.push(i);
   }
+  return allInts.reduce((total, current) => total + current);
 };
 
 // Do not edit below this line
